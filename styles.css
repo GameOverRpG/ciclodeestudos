@@ -1,0 +1,66 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #4b0082;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.horario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.materia {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    border: 2px solid #4b0082;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.quadrados {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    width: 20px;
+    height: 20px;
+    background-color: #800080;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #4b0082;
+}
